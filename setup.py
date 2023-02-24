@@ -6,10 +6,9 @@ setup(
     description='A ML utilities package',
     url='https://github.com/daehan-lim/mlutil',
     author='Daehan Lim',
-    # author_email='shudson@anl.gov',
+    author_email='daehanlim@g.cnu.ac.kr',
     # license='BSD 2-clause',
     packages=['mlutil'],
-    # install_requires=['mpi4py>=2.0', 'numpy',],
 
     classifiers=[
         'Development Status :: 1 - Planning',
