@@ -14,10 +14,10 @@ def timeit(func):
     def measure_time(*args, **kw):
         start_time = time.time()
         result = func(*args, **kw)
-        time_sec = round(time.time() - start_time, 3)
-        time_min = round(time_sec * 60, 3)
+        time_sec = time.time() - start_time
+        time_min = round(time_sec * 60, 2)
         print(f"Processing time of {func.__qualname__}: "
-              f"{time_sec} sec, ({time_min} min)")
+              f"{round(time.time() - start_time, 2)} sec, ({time_min} min)")
         return result
 
     return measure_time
