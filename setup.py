@@ -7,7 +7,7 @@ setup(
     url='https://github.com/daehan-lim/mlutil',
     author='Daehan Lim',
     author_email='daehanlim@g.cnu.ac.kr',
-    packages=['mlutil'],
+    packages=['daehan_mlutil'],
 
     classifiers=[
         'Development Status :: 1 - Planning',
