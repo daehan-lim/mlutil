@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='mlutil_daehan',
+    name='daehan_mlutil',
     version='0.1.2',
     description='A ML utilities package',
     url='https://github.com/daehan-lim/mlutil',
