@@ -15,9 +15,9 @@ def timeit(func):
         start_time = time.time()
         result = func(*args, **kw)
         time_sec = time.time() - start_time
-        time_min = round(time_sec * 60, 2)
-        print(f"Processing time of {func.__qualname__}: "
-              f"{round(time.time() - start_time, 2)} sec, ({time_min} min)")
+        time_min = time_sec / 60
+        print("Processing time of %s(): %.2f seconds ((%.2f minutes)."
+              % (func.__qualname__, time.time() - start_time, time_min))
         return result
 
     return measure_time
